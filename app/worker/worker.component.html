@@ -1,0 +1,180 @@
+<h1><b>WORKER WORK FLOW</b></h1><br><br><br>
+<div class="main_container">
+    <div *ngIf="show1" class="container_1">
+        <div class="text_container">
+            <h3>Attendence</h3>
+        </div>
+        <div class="task_container">
+            <div class="b1">
+                <button (click)="toggleShow()" type="checkbox" >done</button>
+            </div>
+            <div class="b2">
+                <button (click)="attendence_progress()" type="checkbox" >progress</button>
+            </div>
+            
+            
+        </div>
+        <div *ngIf="isShown" class="complted">
+            <h2>completed</h2>
+        </div>
+        <div *ngIf="att_progress" class="attendenceStatus">
+            <h2>in progress</h2>
+        </div>
+        
+    </div>
+
+    <br><br><br><div *ngIf="isShown" class="container_1"  id="divshow" >
+        <div class="text_container">
+            <h3>wear Healmet , Safty Goggles , Working Shoue</h3>
+        </div>
+        <div class="task_container">
+            <div class="b1">
+                <button (click)="design_container()" type="checkbox" >done</button>
+            </div>
+            <div class="b2">
+                <button (click)="safty_progress()" type="checkbox" >progress</button>
+            </div>
+            
+            
+        </div>
+        <div *ngIf="design" class="complted">
+            <h2>completed</h2>
+        </div>
+        <div *ngIf="safty_progres" class="attendenceStatus">
+            <h2>in progress</h2>
+        </div>
+        
+    </div>
+
+
+    <br><br><br><div *ngIf="design" class="container_1"  id="divshow" >
+        <div class="text_container">
+            <h3>Check the 2D design with the sample product</h3>
+        </div>
+        <div class="task_container">
+            <div class="b1">
+                <button (click)="analysis_container()" type="checkbox" >done</button>
+            </div>
+            <div class="b2">
+                <button (click)="analysis_progress()" type="checkbox" >progress</button>
+            </div>
+            
+            
+        </div>
+        <div *ngIf="analys_complete" class="complted">
+            <h2>completed</h2>
+        </div>
+        <div *ngIf="analysis_info" class="attendenceStatus">
+            <h2>in progress</h2>
+        </div>
+        
+    </div>
+
+    <br><br><br><div *ngIf="analysis" class="container_1"  id="divshow" >
+        <div class="text_container">
+            <h3>Analysis with the proper software</h3>
+        </div>
+        <div class="task_container">
+            <div class="b1">
+                <button (click)="rawMaterial_container()" type="checkbox" >done</button>
+            </div>
+            <div class="b2">
+                <button (click)="stimulation_container()" type="checkbox" >progress</button>
+            </div>
+            
+            
+        </div>
+        <div *ngIf="stimulation_complete" class="complted">
+            <h2>completed</h2>
+        </div>
+        <div *ngIf="stimulation_progress" class="attendenceStatus">
+            <h2>in progress</h2>
+        </div>
+        
+    </div>
+
+    <br><br><br><div *ngIf="raw_material" class="container_1"  id="divshow" >
+        <div class="text_container">
+            <h3>check for raw material</h3>
+        </div>
+        <div class="task_container">
+            <div class="b1">
+                <button (click)="start_container()" type="checkbox" >done</button>
+            </div>
+            <div class="b2">
+                <button (click)="raw_container()" type="checkbox" >progress</button>
+            </div>
+            
+            
+        </div>
+
+        <div *ngIf="raw_complete" class="complted">
+            <h2>completed</h2>
+        </div>
+        <div *ngIf="raw_progress" class="attendenceStatus">
+            <h2>in progress</h2>
+        </div>
+        
+        
+    </div>
+
+    <br><br><br><div *ngIf="start_work" class="container_1"  id="divshow" >
+        <div class="text_container">
+            <h3>Machining the product</h3>
+        </div>
+        <div class="task_container">
+            <div class="b1">
+                <button (click)="finish_container()" type="checkbox" >done</button>
+            </div>
+            <div class="b2">
+                <button (click)="machine_container()" type="checkbox" >progress</button>
+            </div>
+            
+            
+        </div>
+
+        <div *ngIf="machine_complete" class="complted">
+            <h2>completed</h2>
+        </div>
+        <div *ngIf="machine_progress" class="attendenceStatus">
+            <h2>in progress</h2>
+        </div>
+        
+        
+    </div>
+
+    <br><br><br><div *ngIf="finished_product" class="container_1"  id="divshow" >
+        <div class="text_container">
+            <h3>Product is completed</h3>
+        </div>
+        <div class="task_container">
+            <div class="b1">
+                <button (click)="purchase_team()" type="checkbox" >done</button>
+            </div>
+            <div class="b2">
+                <button (click)="product_container()" type="checkbox" >progress</button>
+            </div>
+            
+            
+        </div>
+        
+        <div *ngIf="product_complete" class="complted">
+            <h2>completed</h2>
+        </div>
+        <div *ngIf="product_progress" class="attendenceStatus">
+            <h2>in progress</h2>
+        </div>
+        
+    </div>
+
+    <br><br><br><div *ngIf="purchase_teams" class="container_1"  id="divshow" >
+        <h3>Handed over to purchase team</h3>
+       
+    </div>
+
+</div>
+
+
+
+
+

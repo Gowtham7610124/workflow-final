@@ -1,0 +1,161 @@
+<div class="main_container">
+    <h1><b>OFFICE STAFF WORK FLOW</b></h1><br><br><br>
+    <div  class="task_container">
+        <div class="text_container">
+            <h3>Id punch</h3>
+        </div>
+        
+        <div class="button_container">
+            <div class="b1">
+                <button (click)="first_c1()" type="checkbox" >pending</button>
+            </div>
+            <div class="b2">
+                <button (click)="first_container()" type="checkbox" >done</button>
+            </div>
+            
+        </div>
+        <div *ngIf="c1_completed" class="complted">
+            <h2>completed</h2>
+        </div>
+        <div *ngIf="c1_progress" class="attendenceStatus">
+            <h2>in progress</h2>
+        </div>
+        
+    </div>
+    
+    <br><br><div *ngIf="first" class="task_container"  id="divshow" >
+        <div class="text_container">
+            <h3>Worker attendence check</h3>
+        </div>
+        
+        <div class="button_container">
+            <div class="b1">
+                <button (click)="second_c2()" type="checkbox" >pending</button>
+            </div>
+            <div class="b2">
+                <button (click)="second_container()" type="checkbox" >done</button>
+            </div>
+            
+        </div>
+        <div *ngIf="c2_completed" class="complted">
+            <h2>completed</h2>
+        </div>
+        <div *ngIf="c2_progress" class="attendenceStatus">
+            <h2>in progress</h2>
+        </div>
+        
+    </div>
+
+
+    <br><br><div *ngIf="second" class="task_container"  id="divshow" >
+        <div class="text_container">
+            <h3>stock in</h3>
+        </div>
+        
+        <div class="button_container">
+            <div class="b1">
+                <button (click)="c3_container()" type="checkbox" >pending</button>
+            </div>
+            <div class="b2">
+                <button (click)="third_container()" type="checkbox" >done</button>
+            </div>
+            
+        </div>
+        <div *ngIf="c3_completed" class="complted">
+            <h2>completed</h2>
+        </div>
+        <div *ngIf="c3_progress" class="attendenceStatus">
+            <h2>in progress</h2>
+        </div>
+       
+    </div>
+
+    <br><br><div *ngIf="third" class="task_container"  id="divshow" >
+        <div class="text_container">
+            <h3>stock out</h3>
+        </div>
+        
+        <div class="button_container">
+            <div class="b1">
+                <button (click)="c4_container()" type="checkbox" >pending</button>
+            </div>
+            <div class="b2">
+                <button (click)="forth_container()" type="checkbox" >done</button>
+            </div>
+            
+        </div>
+        <div *ngIf="c4_completed" class="complted">
+            <h2>completed</h2>
+        </div>
+        <div *ngIf="c4_progress" class="attendenceStatus">
+            <h2>in progress</h2>
+        </div>
+       
+    </div>
+
+    <br><br><div *ngIf="forth" class="task_container"  id="divshow" >
+        <h3>Accounts</h3>
+        <div class="button_container">
+            <div class="b1">
+                <button (click)="c5_container()" type="checkbox" >pending</button>
+            </div>
+            <div class="b2">
+                <button (click)="fifth_container()" type="checkbox" >done</button>
+            </div>
+            
+        </div>
+        <div *ngIf="c5_completed" class="complted">
+            <h2>completed</h2>
+        </div>
+        <div *ngIf="c5_progress" class="attendenceStatus">
+            <h2>in progress</h2>
+        </div>
+       
+    </div>
+
+    <br><br><div *ngIf="fifth" class="task_container"  id="divshow" >
+        <h3>Previous day amount out</h3>
+        <div class="button_container">
+            <div class="b1">
+                <button (click)="c6_container()" type="checkbox" >pending</button>
+            </div>
+            <div class="b2">
+                <button (click)="sixth_container()" type="checkbox" >done</button>
+            </div>
+            
+        </div>
+        <div *ngIf="c6_completed" class="complted">
+            <h2>completed</h2>
+        </div>
+        <div *ngIf="c6_progress" class="attendenceStatus">
+            <h2>in progress</h2>
+        </div>
+       
+    </div>
+
+    <br><br><div *ngIf="sixth" class="task_container"  id="divshow" >
+        <h3>Pending payment</h3>
+        <div class="button_container">
+            <div class="b1">
+                <button (click)="c7_container()" type="checkbox" >pending</button>
+            </div>
+            <div class="b2">
+                <button (click)="seventh_container()" type="checkbox" >done</button>
+            </div>
+            
+        </div>
+        <div *ngIf="c7_completed" class="complted">
+            <h2>completed</h2>
+        </div>
+        <div *ngIf="c7_progress" class="attendenceStatus">
+            <h2>in progress</h2>
+        </div>
+       
+    </div>
+
+    <br><br><div *ngIf="seventh" class="task_container"  id="divshow" >
+        <h3>documentation</h3>
+       
+    </div>
+
+</div>
